@@ -1,0 +1,154 @@
+body {
+	background-color:pink;
+	font-family:Times New Roman;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.logo img{
+	width:70px;
+	height:55px;
+}
+
+.nav-bar{
+	background-color:#ADD8E6;
+	display:flex;
+	z-index:1000;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+    flex-wrap: wrap;
+	align-items: center;
+	font-family:Time New Roman;
+	padding: 1rem 2rem;
+	top: 0;
+    left: 0;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+.site-title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+
+.nav-bar .menu{
+	display:flex;
+	
+}
+
+.menu li{
+	margin-left:50px;
+	list-style:none;
+	font-size:18px;
+}
+
+.heading {
+	text-align:center;
+	color:black;
+	font-style:bold;
+	background-image:url('craft.avif');
+	background-size:cover;
+	height: 350px;
+    position: relative;
+}
+
+.sections {
+	display:flex;
+	justify-content: space-around; 
+    gap: 20px;                      
+    padding: 40px 20px;
+}
+
+.container-1, .container-2{
+  background-color: #F1EB9C;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1; 
+  text-align:center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size:20px;
+}
+
+.button{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #FF69B4;   
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.footer{
+	background-color:#ADD8E6;
+	padding:2rem, 1rem;
+}
+
+.container {
+	display:flex;
+	align-items:center;
+	margin: 0 auto;
+	flex-wrap:wrap;
+	gap:2rem;
+	justify-content:space-between;
+	max-width: 1000px;
+}
+
+.img, .links{
+	flex:1;
+	min-width:200px;
+}
+
+.img img{
+	width:70px;
+	height:55px;
+	object-fit:contain;
+	
+}
+
+.links {
+	list-style: none;
+    padding: 0;
+	display:flex;
+	flex-direction:column;
+    gap: 0.5rem;
+	align-items: center;
+	justify-content:center;
+}
+
+.menu-footer {
+	align-content:center;
+	list-style:none;
+	gap:30px;
+	padding:0;
+	margin:0;
+}
+
+.img, .img-2{
+	flex: 1;
+    min-width: 200px;
+	text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.img-2 img{
+	width:70px;
+	height:55px;
+	object-fit:contain;	
+}
+
+
