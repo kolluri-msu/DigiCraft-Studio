@@ -20,6 +20,80 @@
 	<section class="hed">
 		<h1>Digital Craft Games!</h1>
 	</section>
+	<section class="third-game">
+		<h1><u>Tangram</h1></u>
+		<p style="font-size:20px">Instructions:</p>
+		<ul style="font-size:19px">
+			<li>Use the seven shapes below to make the final shapes on the right.</li>
+			<li>You can move the shapes and rotate them but should not overlap them.</li>
+			<li>You must use all the shapes to make the final one.</li>
+			<li>When you click on the rotate button it remains active until you press it again. When active you can rotate any image on the paper.</li>
+			<li>You can drag the shapes on the paper.</li>
+			<li>Don't drag the pictures outside the paper.</li>
+			<li>If a shape overlaps another shape you might not be able to drag the one underneath. Move it aside first.</li>
+		</ul>
+		<div id="obstacle-panel">
+			<div class="pic">
+				<h2>Big Triangle</h2>
+				<img src="big triangle.png" class="obstacle" draggable="true" data-name="triangle-1" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Big Triangle</h2>
+				<img src="big triangle.png" class="obstacle" draggable="true" data-name="triangle-2" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Medium Triangle</h2>
+				<img src="med triangle.png" class="obstacle" draggable="true" data-name="mtraingle" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Square</h2>
+				<img src="square.png" class="obstacle" draggable="true" data-name="Square" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Parallelogram</h2>
+				<img src="rhombus.png" class="obstacle" draggable="true" data-name="Rhombus" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Small Triangle</h2>
+				<img src="small triangle.png" class="obstacle" draggable="true" data-name="striangle-1" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Small Triangle</h2>
+				<img src="small triangle.png" class="obstacle" draggable="true" data-name="s-traingle-2" width="70", height="70">
+			</div>
+		</div>
+	</section>
+	<br>
+	<div class="craft-box">
+		<canvas id="board" width="800" height="700"></canvas>
+		<div class="final-shapes">
+			<img SRC="qws.jpg" width ="300" height="300">
+			<br><br><br><br>
+			<img SRC="qws1.jpg" width ="300" height="300">
+		</div>
+		<div class="final-shapes">
+			<img SRC="qws 3.jpg" width ="300" height="300">
+			<br><br><br><br>
+			<img SRC="qws 4.jpg" width ="300" height="300">
+		</div>
+	</div>
+	<br>
+	<div class="options" style="margin-left:265px; gap:20px;">
+	  <button id="undo">↩️ Undo</button>
+	  <button id="rotate">🔄 Rotate</button>
+	</div>
+
+	<br><br><br>
+	<h2 style="margin-left:10px">Answers:</h2>
+	<div class="ans">
+			<img SRC="ans.jpg" width ="300" height="300">
+			<img SRC="ans1.jpg" width ="300" height="300">
+			<img SRC="ans 2.jpg" width ="300" height="300">
+			<img SRC="ans 3.jpg" width ="300" height="300">
+	</div>
+	<br>
+	
+	<script src="board.js"></script>
 	<section class="first-game">
 	<h1><u>Interactive Stencil Maker</h1></u>
 	<p style="font-size:20px">Instructions:</p>
@@ -125,80 +199,7 @@
 	<script src="maze.js"></script>
 	<br><br>
 	
-	<section class="third-game">
-		<h1><u>Tangram</h1></u>
-		<p style="font-size:20px">Instructions:</p>
-		<ul style="font-size:19px">
-			<li>Use the seven shapes below to make the final shapes on the right.</li>
-			<li>You can move the shapes and rotate them but should not overlap them.</li>
-			<li>You must use all the shapes to make the final one.</li>
-			<li>When you click on the rotate button it remains active until you press it again. When active you can rotate any image on the paper.</li>
-			<li>You can drag the shapes on the paper.</li>
-			<li>Don't drag the pictures outside the paper.</li>
-			<li>If a shape overlaps another shape you might not be able to drag the one underneath. Move it aside first.</li>
-		</ul>
-		<div id="obstacle-panel">
-			<div class="pic">
-				<h2>Big Triangle</h2>
-				<img src="big triangle.png" class="obstacle" draggable="true" data-name="triangle-1" width="70", height="70">
-			</div>
-			<div class="pic">
-				<h2>Big Triangle</h2>
-				<img src="big triangle.png" class="obstacle" draggable="true" data-name="triangle-2" width="70", height="70">
-			</div>
-			<div class="pic">
-				<h2>Medium Triangle</h2>
-				<img src="med triangle.png" class="obstacle" draggable="true" data-name="mtraingle" width="70", height="70">
-			</div>
-			<div class="pic">
-				<h2>Square</h2>
-				<img src="square.png" class="obstacle" draggable="true" data-name="Square" width="70", height="70">
-			</div>
-			<div class="pic">
-				<h2>Parallelogram</h2>
-				<img src="rhombus.png" class="obstacle" draggable="true" data-name="Rhombus" width="70", height="70">
-			</div>
-			<div class="pic">
-				<h2>Small Triangle</h2>
-				<img src="small triangle.png" class="obstacle" draggable="true" data-name="striangle-1" width="70", height="70">
-			</div>
-			<div class="pic">
-				<h2>Small Triangle</h2>
-				<img src="small triangle.png" class="obstacle" draggable="true" data-name="s-traingle-2" width="70", height="70">
-			</div>
-		</div>
-	</section>
-	<br>
-	<div class="craft-box">
-		<canvas id="board" width="800" height="700"></canvas>
-		<div class="final-shapes">
-			<img SRC="qws.jpg" width ="300" height="300">
-			<br><br><br><br>
-			<img SRC="qws1.jpg" width ="300" height="300">
-		</div>
-		<div class="final-shapes">
-			<img SRC="qws 3.jpg" width ="300" height="300">
-			<br><br><br><br>
-			<img SRC="qws 4.jpg" width ="300" height="300">
-		</div>
-	</div>
-	<br>
-	<div class="options" style="margin-left:265px; gap:20px;">
-	  <button id="undo">↩️ Undo</button>
-	  <button id="rotate">🔄 Rotate</button>
-	</div>
-
-	<br><br><br>
-	<h2 style="margin-left:10px">Answers:</h2>
-	<div class="ans">
-			<img SRC="ans.jpg" width ="300" height="300">
-			<img SRC="ans1.jpg" width ="300" height="300">
-			<img SRC="ans 2.jpg" width ="300" height="300">
-			<img SRC="ans 3.jpg" width ="300" height="300">
-	</div>
-	<br>
 	
-	<script src="board.js"></script>
 	<br>
 	<footer class="footer">
 		<section class="container">
@@ -221,4 +222,5 @@
 	</footer>
 	
 </BODY>
+
 </HTML>
