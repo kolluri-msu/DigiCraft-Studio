@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE> Crafting </TITLE>
+<link href="hp.css" rel="stylesheet"/>
+<link href="craft.css" rel="stylesheet"/>
+</HEAD>
+<BODY>
+	<nav class = "nav-bar">
+	  <div class="branding">
+		<a class="logo" href="#"><img src="logo-Picsart-BackgroundRemover.jpg"/></a>
+		<h1 class="site-title">DigiCraft Studio</h1>
+	  </div>
+		<ul class="menu">
+			<li><a href="HP.html">Home</a></li>
+			<li><a href="learn.html">Learn</a></li>
+			<li><a href="craft.html">Craft</a></li>
+		</ul>
+	</nav>
+	<section class="hed">
+		<h1>Digital Craft Games!</h1>
+	</section>
+	<section class="first-game">
+	<h1><u>Interactive Stencil Maker</h1></u>
+	<p style="font-size:20px">Instructions:</p>
+	<ul style="font-size:19px">
+		<li>Click on the canvas once to place a starting point.</li>
+		<li>Click on the canavas again at a different place to form a line.</li>
+		<li>To use one of the Cut options, click one of them (Horizontal, Vertical, Slant, Curved) and repeat 1 and 2. This time 
+		    instead of a line a cut is formed. For curved line trace the path by dragging the mouse instead of clicking at the 
+			end point. Remember not to click on the canvas again after pressing the curved cut button as this deactivates the 
+			mode.</li>
+	    <li>To erase simply click on the erase button and click or drag the mouse on the canvas. To exit out of erase mode simply click on the erase
+		    button again. Remember to click the button again to deactivate the mode or the cursor will keep erasing.
+		<li>To undo any errors use the undo button.
+	</ul>
+	</section>
+	<div class="craft-box">
+		<canvas id = "paperCanvas" width="800", height="700"></canvas>
+		<img src="stencils.jpg">
+	</div>
+	<br><br><br>
+	<div class="options">
+		<div class="dropdown">
+			<button class="dropbtn">✂️ Cut</button>
+			<div class="content">
+				<button id="horizontalCutBtn">Horizontal</button>
+				<button id="verticalCutBtn">Vertical</button>
+				<button id ="slantCutBtn">Slant</button>
+				<button id="curvedCutBtn">Curved</button>
+			</div>
+		</div>
+		<button id="eraserBtn">🧽 Eraser Mode</button>
+		<button id="undoBtn">↩️ Undo </button>
+	</div>
+	<br><br>
+	<script src="script.js"></script>
+	<section class="second-game">
+		<h1><u>Triwizard Maze</h1></u>
+		<p style="font-size:20px">Instructions:</p>
+		<ul style="font-size:19px">
+			<li>To create a maze use lines or the cuts.</li>
+			<li>The below row contains the pictures of obstacles Harry Potter faced in the Maze and the Triwizard Cup. To use 
+			    them simply drag them from the row onto the paper.</li>
+			<li>The buttons work the same way as in the previous game except curved cut, it only deactivates when you press the 
+			    curved option in Cut button again.</li>
+		</ul>
+		<div id="obstacle-palette">
+			<div class="pic">
+				<h2>Skrewt</h2>
+				<img src="skrewt.jpg" class="obstacle" draggable="true" data-name="Skrewt" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Spider</h2>
+				<img src="spider.webp" class="obstacle" draggable="true" data-name="Spider" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Krum</h2>
+				<img src="krum.jpg" class="obstacle" draggable="true" data-name="Krum" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Sphinx</h2>
+				<img src="sphinx.jpg" class="obstacle" draggable="true" data-name="Sphinx" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Mist</h2>
+				<img src="mist.jpg" class="obstacle" draggable="true" data-name="GoldenMist" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Boggart</h2>
+				<img src="boggart.jpg" class="obstacle" draggable="true" data-name="Boggart" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Cup</h2>
+				<img src="cup.webp" class="obstacle" draggable="true" data-name="Cup" width="70", height="70">
+			</div>
+		</div>
+	</section>
+	<br>
+	
+	<div class="craft-box">
+		<canvas id="mazeCanvas" width="800" height="700"></canvas>
+		<div class="mazes">
+			<img SRC="maze-1.jpg" width ="300" height="300">
+			<br><br><br><br>
+			<img SRC="maze-2.png" width ="300" height="300">
+		</div>
+		<img style="margin-top:190px"SRC="maze-3.jpeg" width ="300" height="300">
+	</div>
+	<br><br><br>
+	
+	<div class="options">
+		<div class="dropdown">
+			<button class="dropbtn">✂️ Cut</button>
+			<div class="content">
+				<button id="horizontalMaze">Horizontal</button>
+				<button id="verticalMaze">Vertical</button>
+				<button id ="slantMaze">Slant</button>
+				<button id="curvedMaze">Curved</button>
+			</div>
+		</div>
+		<button id="eraserMaze">🧽 Eraser Mode</button>
+		<button id="undoMaze">↩️ Undo </button>
+	</div>
+	<script src="maze.js"></script>
+	<br><br>
+	
+	<section class="third-game">
+		<h1><u>Tangram</h1></u>
+		<p style="font-size:20px">Instructions:</p>
+		<ul style="font-size:19px">
+			<li>Use the seven shapes below to make the final shapes on the right.</li>
+			<li>You can move the shapes and rotate them but should not overlap them.</li>
+			<li>You must use all the shapes to make the final one.</li>
+			<li>When you click on the rotate button it remains active until you press it again. When active you can rotate any image on the paper.</li>
+			<li>You can drag the shapes on the paper.</li>
+			<li>Don't drag the pictures outside the paper.</li>
+			<li>If a shape overlaps another shape you might not be able to drag the one underneath. Move it aside first.</li>
+		</ul>
+		<div id="obstacle-panel">
+			<div class="pic">
+				<h2>Big Triangle</h2>
+				<img src="big triangle.png" class="obstacle" draggable="true" data-name="triangle-1" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Big Triangle</h2>
+				<img src="big triangle.png" class="obstacle" draggable="true" data-name="triangle-2" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Medium Triangle</h2>
+				<img src="med triangle.png" class="obstacle" draggable="true" data-name="mtraingle" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Square</h2>
+				<img src="square.png" class="obstacle" draggable="true" data-name="Square" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Parallelogram</h2>
+				<img src="rhombus.png" class="obstacle" draggable="true" data-name="Rhombus" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Small Triangle</h2>
+				<img src="small triangle.png" class="obstacle" draggable="true" data-name="striangle-1" width="70", height="70">
+			</div>
+			<div class="pic">
+				<h2>Small Triangle</h2>
+				<img src="small triangle.png" class="obstacle" draggable="true" data-name="s-traingle-2" width="70", height="70">
+			</div>
+		</div>
+	</section>
+	<br>
+	<div class="craft-box">
+		<canvas id="board" width="800" height="700"></canvas>
+		<div class="final-shapes">
+			<img SRC="qws.jpg" width ="300" height="300">
+			<br><br><br><br>
+			<img SRC="qws1.jpg" width ="300" height="300">
+		</div>
+		<div class="final-shapes">
+			<img SRC="qws 3.jpg" width ="300" height="300">
+			<br><br><br><br>
+			<img SRC="qws 4.jpg" width ="300" height="300">
+		</div>
+	</div>
+	<br>
+	<div class="options" style="margin-left:265px; gap:20px;">
+	  <button id="undo">↩️ Undo</button>
+	  <button id="rotate">🔄 Rotate</button>
+	</div>
+
+	<br><br><br>
+	<h2 style="margin-left:10px">Answers:</h2>
+	<div class="ans">
+			<img SRC="ans.jpg" width ="300" height="300">
+			<img SRC="ans1.jpg" width ="300" height="300">
+			<img SRC="ans 2.jpg" width ="300" height="300">
+			<img SRC="ans 3.jpg" width ="300" height="300">
+	</div>
+	<br>
+	
+	<script src="board.js"></script>
+	<br>
+	<footer class="footer">
+		<section class="container">
+			<div class="img">
+				<img src="logo-Picsart-BackgroundRemover.jpg"/>
+				<p>DigiCraft Studio</p>
+			</div>
+			<div class="links">
+				<ul class="menu-footer">
+					<li><a href="HP.html">Home</a></li>
+					<li><a href="learn.html">Learn</a></li>
+					<li><a href="craft.html">Craft</a></li>
+				</ul>
+			</div>
+			<div class="img-2">
+				<img src="logo-Picsart-BackgroundRemover.jpg"/>
+				<p>DigiCraft Studio</p>
+			</div>
+		</section>
+	</footer>
+	
+</BODY>
+</HTML>
